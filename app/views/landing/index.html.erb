@@ -1,0 +1,15 @@
+<h1>Users</h1>
+
+<ul>
+  <% User.all.each do |user| %>
+    <li> User # <%= user.name %>
+  <% end %>
+</ul>
+
+<h1>Admins</h1>
+
+<ul>
+  <% Admin.all.each do |admin| %>
+    <li> Admin # <%= admin.name %>
+  <% end %>
+</ul>
