@@ -13,3 +13,19 @@
     <li> Admin # <%= admin.name %>
   <% end %>
 </ul>
+
+<h1>Roles</h1>
+
+<ul>
+  <% Role.all.each do |role| %>
+    <li> Role # <%= role.name %>
+  <% end %>
+</ul>
+
+<h1>Permissions</h1>
+
+<ul>
+  <% Permission.all.each do |permission| %>
+    <li> Permission # <%= permission.name %>
+  <% end %>
+</ul>

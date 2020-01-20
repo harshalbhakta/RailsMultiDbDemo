@@ -10,9 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_18_171907) do
+ActiveRecord::Schema.define(version: 2020_01_20_010956) do
 
   create_table "admins", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "permissions", force: :cascade do |t|
     t.string "name"
   end
 
